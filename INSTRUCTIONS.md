@@ -20,5 +20,5 @@ Risper -> Populate tables with data / data creation
 Jabari -> Retrieving data (Write an SQL script, save it in a file called retrieving.txt)
 Patrick -> Updating data (Write an SQL script, save it in a file called updating.txt)
 Janeffer -> Deleting data -> (Write an SQL script, save it in a file called deleting.txt)
-Robert -> Implement reports -> (Write an SQL sript, save it in a file called reportscript.txt)
+Robert -> Implement reports -> (Write an SQL script, save it in a file called reportscript.txt)
 
