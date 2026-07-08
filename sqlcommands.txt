@@ -1,0 +1,34 @@
+CREATE TABLE Patients (
+    patient_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name varchar(100),
+);
+
+CREATE TABLE Specialitites (
+    speciality_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name varchar(100),
+    description varchar(250),
+);
+
+CREATE TABLE Doctors (
+    doctor_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name varchar(100),
+    speciality_id INTEGER,
+
+    FOREIGN KEY (speciality_id)
+    REFERENCE Specialitites(speciality_id),
+);
+
+CREATE TABLE Appointments (
+    appointment_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    doctor_id INTEGER,
+    patient_id INTEGER,
+    appointments_date_time DATETIME,
+    notes varchar(500),
+    treatment varchar(100),
+
+    FOREIGN KEY (doctor_id)
+    REFERENCE Doctors(doctor_id),
+
+    FOREIGN KEY (patient_id)
+    REFERENCE Patients(patient_id)
+);
