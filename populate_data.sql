@@ -1,4 +1,4 @@
-Driver Data
+-- Driver Data
 INSERT INTO Driver (driver_id, name, license_number, experience_driving, salary) 
     VALUES (1 ,'Joe Ben', 'YDN-234', 5, 18000), 
     (2 ,'Ken Mwangi', 'KXT-678', 10, 22000), 
@@ -6,7 +6,7 @@ INSERT INTO Driver (driver_id, name, license_number, experience_driving, salary)
     (4 , 'Titus Alusa', 'DMV-680', 3, 18000);
 
 
-Trucks Data
+-- Trucks Data
 INSERT INTO Trucks (truck_id, model, date_bought) 
     VALUES 
     (1, 'Toyota', 25/4/2020), 
@@ -16,7 +16,7 @@ INSERT INTO Trucks (truck_id, model, date_bought)
 
 
 
-Expenses Data
+-- Expenses Data
 INSERT INTO Expenses (expense_id, fuel, maintenance ,repairs ,driver_allowance , total) 
 VALUES 
     (1, 4800, 3000, 1000, 3500, 12300), 
