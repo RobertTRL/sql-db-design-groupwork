@@ -20,4 +20,4 @@ def run_sql_file(db_path, sql_file_path):
     finally:
         conn.close()
 
-run_sql_file("logistics.db", "sql_scripts/report.sql")
+run_sql_file("deleting.db", "sql_scripts/deleting.sql")

@@ -26,7 +26,7 @@ VALUES
 
 
 
-Trips Data
+-- Trips Data
 INSERT INTO Trips (trip_id, destination, driver_id, revenue_made, expenses_id, truck_id) 
 VALUES 
     (1, 'Industry area', 3, 70000, 2, 3),
