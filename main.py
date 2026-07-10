@@ -16,6 +16,8 @@ def run_sql_file(db_path, sql_file_path):
     except sqlite3.Error as e:
         print(f"Error running {sql_file_path}: {e}")
         conn.rollback()
-        
+
     finally:
         conn.close()
+
+run_sql_file("logistics.db", "sql_scripts/report.sql")
